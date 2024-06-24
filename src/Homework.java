@@ -13,23 +13,32 @@ public class Homework {
 //            for (int i = 0; i < string.length(); i++) {
 //
 //            }
-            String repeated = string.repeat(10);
-            Integer count = map.get(string.repeat(10));
-            map.put(repeated, count);
+//            String repeated = string.repeat(10);
 
 
-
-
+            Integer count = map.get(string);
 
             if (count == null) {
-                map.put(string, count);
+                map.put(string, 1);
 
-            } else if (count >= 10) {
+            } else if (count >= 100) {
                 break;
 
             } else {
-                map.put(string, count * 10);
+                map.put(string, count + 1);
             }
+//            map.put(string, count);
+
+
+//            if (count == null) {
+//                map.put(string, count);
+//
+//            } else if (count >= 100) {
+//                break;
+//
+//            } else {
+//                map.put(string, count * 10);
+//            }
             System.out.println(map);
 
 //                map.put(string, count );
